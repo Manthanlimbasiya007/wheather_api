@@ -19,7 +19,6 @@ class _homescreenState extends State<homescreen> {
   Widget build(BuildContext context) {
     homeProviderT = Provider.of<HomeProvider>(context, listen: true);
     homeProviderF = Provider.of<HomeProvider>(context, listen: false);
-
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -40,7 +39,6 @@ class _homescreenState extends State<homescreen> {
                 child: Text("Wheather Api"),
               ),
             ),
-
             Expanded(
               child: FutureBuilder(
                 builder: (context, snapshot) {
